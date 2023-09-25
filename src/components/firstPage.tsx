@@ -110,16 +110,15 @@ export default function FirstPage() {
             isButtonClicked ? "w-1/2 " : ""
           }`}
         >
-          <div className={` bg-gray-50 m-2 rounded-md border border-gray h-screen ${
-            isButtonClicked ? "w-1/2 " : "full"
-          }
-           `}>
+          <div
+            className={` bg-gray-50 m-2 rounded-md border border-gray h-screen ${
+              isButtonClicked ? "w-1/2 " : "full"
+            }
+           `}
+          >
             <div className=" top-0 flex h-10 mt-[12px]  items-center   bg-gray-50  px-4 ">
               <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
                 <button
-                  // className={` ${
-                  //   isButtonClicked ? "w-fix " : ""
-                  // }`}
                   className="px-4 py-2  bg-green-500 w-[240px] text-white"
                   onClick={openModal}
                 >
@@ -135,9 +134,6 @@ export default function FirstPage() {
                   />
                   <input
                     id="search-field"
-                    // className={` ${
-                    //   isButtonClicked ? "w-full " : ""
-                    // }`}
                     className="block h-full w-[350px] border-0 py-0 pl-8 pr-0 text-gray-900 rounded-md placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                     placeholder="Search..."
                     type="search"
